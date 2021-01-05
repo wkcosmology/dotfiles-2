@@ -177,6 +177,7 @@ function! PackagerInit() abort
   call packager#add('neoclide/coc.nvim', {'branch': 'release'})
   for coc_plugin in [
         \ 'fannheyward/coc-sql',
+        \ 'fannheyward/coc-pyright',
         \ 'iamcco/coc-diagnostic',
         \ 'iamcco/coc-vimlsp',
         \ 'josa42/coc-docker',
@@ -192,7 +193,6 @@ function! PackagerInit() abort
         \ 'neoclide/coc-snippets',
         \ 'neoclide/coc-tsserver',
         \ 'neoclide/coc-yaml',
-        \ 'pappasam/coc-jedi',
         \ ]
     call packager#add(coc_plugin, {
           \ 'do': 'yarn install --frozen-lockfile',
