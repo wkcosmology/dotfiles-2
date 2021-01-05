@@ -195,7 +195,7 @@ function! PackagerInit() abort
         \ 'neoclide/coc-yaml',
         \ ]
     call packager#add(coc_plugin, {
-          \ 'do': 'yarn install --frozen-lockfile',
+          \ 'do': 'yarn install --frozen-lockfile && yarn build',
           \ })
   endfor
 
