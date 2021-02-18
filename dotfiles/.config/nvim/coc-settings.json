@@ -5,6 +5,7 @@
   "diagnostic.warningSign": "π",
   "python.formatting.provider": "black",
   "python.linting.pylintEnabled": true,
+  "python.linting.mypyEnabled": true,
   "diagnostic-languageserver.filetypes": {
     "python": ["pylint", "mypy"],
     "sh": ["shellcheck"]
